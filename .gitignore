@@ -88,3 +88,6 @@ vflask-ask/
 
 # Rope project settings
 .ropeproject
+
+# VSCODE workspace
+.vscode
