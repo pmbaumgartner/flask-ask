@@ -1,21 +1,30 @@
 welcome: |
-    Welcome to the Alexa Skills Kit sample. Please tell me your favorite color by
-    saying, my favorite color is red
+    Welcome to the Alexa Skills Kit sample. We're going to practice mimicking
+    each other. You'll repeat the words I say by responding with,
+    the word you said was red.
 
-welcome_reprompt: Please tell me your favorite color by saying, my favorite color is red
+welcome_reprompt: Would you like to start a new round? Please say yes or no.
 
-known_color: |
-    I now know that your favorite color is {{ color }}. You can ask me your favorite color
-    by saying, what's my favorite color?
+correct_response: |
+    That's right, the word was {{ actual_answer }}.
 
-known_color_reprompt: You can ask me your favorite color by saying, what's my favorite color?
+incorrect_response: |
+    Sorry, the word was {{ actual_answer }}.
 
-known_color_bye: Your favorite color is {{ color }}. Goodbye
+correct_response_reprompt: You can ask me for another word by saying, what's another word?
 
-unknown_color: I'm not sure what your favorite color is, please try again
+known_answer_bye: That word was {{ answer }}. Goodbye
 
-unknown_color_reprompt: |
-    I'm not sure what your favorite color is. You can tell me your favorite color by saying,
-    my favorite color is red
+unknown_answer: I'm not sure what that word is, please try again
+
+unknown_answer_reprompt: |
+    I'm not sure what that word is. You can tell me that word again by saying,
+    the word you said was red
+
+no_text: |
+    Goodbye.
+
+yes_text: |
+    Repeat after me. The word is {{ actual_answer }}.
 
 card_title: Session
